@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get("/basics/1", { :controller => "basics", :action => "variables_1"})
   get("/basics/2", { :controller => "basics", :action => "variables_2"})
   get("/basics/3", { :controller => "basics", :action => "variables_3"})
-  get("/basics/:4", { :controller => "basics", :action => "variables_4"})
+  get("/basics/params/:name", { :controller => "basics", :action => "variables_4"})
 
   get("/basics/5", { :controller => "basics", :action => "methods_1"})
   get("/basics/6", { :controller => "basics", :action => "methods_2"})
