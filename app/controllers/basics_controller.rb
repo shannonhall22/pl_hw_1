@@ -1,31 +1,50 @@
 class BasicsController < ApplicationController
 
-#### Practice with variables #############################
+#Variable Practice#
 
   def variables_1
-    #==== Instructions =================================
-    # When a user navigates to /basics/1 , she should see
-    # the text "It worked!"
+    # Instructions:
+    # When a user navigates to /basics/1, they should see
+    # the text "Hello, World!"
     #
-    # Your code goes below
-    #===============================================
+    # Your code goes below:
 
     @result = "Replace this string with your answer"
     render 'basics'
   end
 
   def variables_2
-    #==== Instructions =================================
-    # When a user navigates to /basics/2 , she should see
-    # the number 7
+    # Instructions:
+    # When a user navigates to /basics/2, they should see
+    # the number 3.
     #
-    # Your code goes below
-    #===============================================
+    # Your code goes below:
 
     @result = "Replace this string with your answer"
     render 'basics'
   end
 
+  def variables_3
+    # Instructions:
+    # When a user navigates to /basics/3, they should see
+    # the text "3 Blind Mice."
+    #
+    # Your code goes below:
+
+    @result = "Replace this string with your answer"
+    render 'basics'
+  end
+
+  def variables_4
+    # Instructions:
+    # When a user navigates to /basics/:4, they should see
+    # your name.
+    #
+    # Your code goes below:
+
+    @result = "Replace this string with your answer"
+    render 'basics'
+  end
 
 #### Practice with methods ##############################
 
@@ -82,6 +101,19 @@ class BasicsController < ApplicationController
     render 'basics'
   end
 
+  def methods_5
+    #==== Instructions =================================
+    # When a user navigates to /basics/6 , she should see
+    # a reversed version of what's in the phrase variable
+    #
+    # Your code goes below
+    #===============================================
+    phrase = "not a palindrome"
+
+    @result = "Replace this string with your answer"
+    render 'basics'
+  end
+
 
 #### Practice combining strings and integers ##############################
 
@@ -100,7 +132,7 @@ class BasicsController < ApplicationController
     render 'basics'
   end
 
-  def combining_1
+  def combining_2
     #==== Instructions =================================
     # When a user navigates to /basics/7 , she should see
     # a string that combines the "first", "middle" and "last" variables
@@ -115,7 +147,7 @@ class BasicsController < ApplicationController
     render 'basics'
   end
 
-  def combining_2
+  def combining_3
     #==== Instructions =================================
     # When a user navigates to /basics/8 , she should see
     # a string that combines the "quantity" and "item" variables.
@@ -129,7 +161,22 @@ class BasicsController < ApplicationController
     render 'basics'
   end
 
-  def combining_3
+  def combining_4
+    #==== Instructions =================================
+    # When a user navigates to /basics/9 , she should see
+    # a string that combines the "quantity" and "item" variables.
+    # Dont rewrite the code from scratch, just fix the error.
+    #
+    # Your code goes below
+    #===============================================
+    quantity = 12
+    item = " monkeys"
+
+    @result = quantity + item
+    render 'basics'
+  end
+
+  def combining_5
     #==== Instructions =================================
     # When a user navigates to /basics/9 , she should see
     # a string that combines the "quantity" and "item" variables.
